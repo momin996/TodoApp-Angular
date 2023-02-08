@@ -1,0 +1,35 @@
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 33px;
+  align-items: center;
+  grid-column-gap: 0.9rem;
+  margin-top: 5.5rem;
+}
+
+form * {
+  border: none;
+  outline: none;
+}
+
+form input {
+  background: var(--input-bg-color);
+  color: var(--input-font-color);
+  border-radius: 13px;
+  padding: 10px 15px 10px 15px;
+  font-size: 0.95rem;
+  font-family: "Inter", sans-serif;
+  width: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+form button {
+  background: transparent;
+  height: 100%;
+  width: 35px;
+}
+
+.svg-plus-logo {
+  fill: var(--plus-logo-color);
+}

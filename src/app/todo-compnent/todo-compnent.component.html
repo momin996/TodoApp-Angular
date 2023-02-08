@@ -1,0 +1,11 @@
+<div class="todo" [ngClass]="{'todo-delete':isDeleted}">
+    <p class="content" [ngClass]="{'todo-done':todo.isCompleted}">{{ todo.task | titlecase }}</p>
+    <div class="buttons">
+        <button class="done" (click)="todo.isCompleted=!todo.isCompleted">
+            <img src="../../assets/done.svg" alt="done" />
+        </button>
+        <button class="delete">
+            <img src="../../assets/delete.svg" alt="delete" (click)="onDeleteTodo(todo)" />
+        </button>
+    </div>
+</div>

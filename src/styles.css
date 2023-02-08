@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+*:not(body) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lightmode {
+    --home-bg-color: #f3f3f3;
+    --input-bg-color: #e3e3e3;
+    --input-font-color: black;
+    --todo-bg-color: white;
+    --todo-font-color: black;
+    --plus-logo-color: white;
+    --header-color: rgb(255, 107, 0);
+    --github-fill: black;
+    --github-hover-fill: white;
+    --github-bg: black;
+    --theme-check-color: var(--header-color);
+    --theme-check-hover-color: white;
+    --theme-check-bg: var(--header-color);
+    --scroll-bar-thumb: rgb(19, 27, 39);
+}
+
+.darkmode {
+    --home-bg-color: #353535;
+    --input-bg-color: #484848;
+    --input-font-color: white;
+    --todo-bg-color: #636363;
+    --todo-font-color: white;
+    --plus-logo-color: #35383a;
+    --header-color: hsl(9, 92%, 70%);
+    --github-fill: white;
+    --github-hover-fill: #000000;
+    --github-bg: white;
+    --theme-check-bg: white;
+    --theme-check-hover-color: var(--header-color);
+    --theme-check-color: white;
+}
+
+body {
+    height: auto;
+    margin: 0;
+    width: auto;
+    background: var(--home-bg-color);
+    color: var(--home-font-color);
+    user-select: none;
+    --webkit-user-select: none;
+    font-family: "Inter", sans-serif;
+    position: relative;
+    display: grid;
+    align-items: center;
+}

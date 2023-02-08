@@ -1,0 +1,14 @@
+#main-container {
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+#TODOs {
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  margin-top: 1.7rem;
+  overflow: hidden;
+}
